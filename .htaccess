@@ -1,0 +1,11 @@
+RewriteEngine on
+
+RewriteRule ^userappeal?$ FR_User_Appeal.php [L]
+RewriteRule ^test?$ FR_TestSelection.php [L]
+RewriteRule ^quiz?$ FR_StuQuiz.php [L]
+RewriteRule ^stu_submission?$ FR_StuSubmission.php [L]
+RewriteRule ^settings?$ FR_Settings.php [L]
+RewriteRule ^stats?$ FR_ScoreStats.php [L]
+RewriteRule ^panel?$ FR_Admins.php [L]
+# RewriteRule ^/static/(.*)$ /static/$1 [L,QSA]
+RewriteRule ^api/(.*)$ api.php?key=$1 [L,QSA]
